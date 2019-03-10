@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Page</title>
+    <link rel="stylesheet" href="profilepage.css">
+  </head>
+  <body>
+
+      <ul>
+          <li><a href="">PROFILE</a></li>
+          <li><a href="">CLASS CHAT</a></li>
+          <li><a href="/chat">GROUP CHAT</a></li>
+          <li><a href="/upload">NOTES</a></li>
+          <li><a href="">NOTICES</a></li>
+      </ul>
+
+      <div class="editprofile">
+      <h1>My PROFILE</h1>
+      <!--
+      <form class="" action="index.ejs" method="post">
+        <input type="text" placeholder="NAME" name="" value="">
+        <input type="text" placeholder="BRANCH" name="" value="">
+        <input type="number" placeholder="ROLL NUMBER" name="" value="">
+        <input type="email" placeholder="E-MAIL" name="" value="">
+        <input type="number" placeholder="PHONE" name="" value="">
+        <input type="submit" name="" value="SAVE">
+        <input type="submit"  name="" value="CANCEL">
+      </form>
+      -->
+      <h1>Name : <%= user.name %> </h1>
+      <h1>Roll No. : <%= user.roll %> </h1>
+      <h1>Email : <%= user.email %> </h1>
+      <h1>Contact : <%= user.phone %> </h1>
+      <h1>Branch : <%= user.branch %> </h1>
+      <h1><a href="/logout">LogOUT</a></h1>
+      </div>
+
+
+  </body>
+</html>

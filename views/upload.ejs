@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <title>Simple Multer Upload Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      
+    <form action="/upload" enctype="multipart/form-data" method="post">
+        <label>
+                Title:
+                <input type="text" name="title">
+            </label>
+            <label>
+                Upload File:
+                <input type="file" name="uploaded">		
+            </label>
+            <label>
+                Desciption:
+                <input type="text" name="description">
+            </label>
+        
+            <button>Submit</button>
+    </form>  
+      <a href="/home/yogesh/Documents/d82pljLpBiFI1vJjY1Zs_hxszoW357V-lFy3Q_9QEi0.jpg">test.pdf</a>
+    <table>
+        <% for(var i=0; i < files.length; i++) { %>
+           <tr>
+             <td><a href= <%= files[i].filename %> ><%= files[i].filename %></a></td>
+           </tr>
+        <% } %>
+        </table>
+  </body>
+</html>
