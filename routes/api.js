@@ -130,7 +130,7 @@ router.get('/upload', (req, res) => {
   });
 
 router.get('/names', function(req, res){
-    File.find({}, function(err, users){
+    User.find({}, function(err, users){
         res.send(users);
     })
 })
